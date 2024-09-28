@@ -30,20 +30,6 @@
 
 </p>
 
-<hr/>
-
-## 1. Checkout the Website and Docs
-
-<p align="center">
-Have a look at the new <a href="https://wpbones.vercel.app">WPBones website and documentation</a>
-</p>
-
-<img width="1127" alt="WP Bones docs" src="https://github.com/user-attachments/assets/e268fcd8-592c-4c21-bf08-94fe01a8113a">
-
-## 2. Join the Community
-
-To participate more actively in discussions and stay updated on proposals and latest releases, I would be pleased if you joined the [WP Bones community on Discord](https://discord.gg/5bdVyycU8F).
-
 ## Thanks to Our Contributors
 
 ### WPBones
