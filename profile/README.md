@@ -43,7 +43,3 @@
 <a href="https://github.com/wpbones/wpkirk/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=wpbones/wpkirk" />
 </a>
-
-### Sponsor
-
-<a href="https://polar.sh/wp-bones"><picture><source media="(prefers-color-scheme: dark)" srcset="https://polar.sh/embed/tiers.svg?org=wp-bones&darkmode"><img alt="Subscription Tiers on Polar" src="https://polar.sh/embed/tiers.svg?org=wp-bones"></picture></a>
