@@ -64,7 +64,7 @@
   <img src="https://contrib.rocks/image?repo=wpbones/wpkirk" />
 </a>
 
-## 😎 Become a sponsor
+## ❤️ Become a sponsor
 
 <a href="https://github.com/sponsors/wpbones">Click here to actively contribute to the project</a>
 
