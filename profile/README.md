@@ -50,6 +50,12 @@
   <img src="https://contrib.rocks/image?repo=wpbones/wpkirk" />
 </a>
 
+### Documentation
+
+<a href="https://github.com/wpbones/website-docs/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=wpbones/website-docs" />
+</a>
+
 ## ❤️ Become a sponsor
 
 <a href="https://github.com/sponsors/wpbones">Click here to actively contribute to the project</a>
