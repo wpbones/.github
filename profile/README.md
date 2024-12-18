@@ -3,9 +3,9 @@
 </p>
 
 <div align="center">
-  
+
   # WP Bones allows for WordPress plugins with Laravel-like features
-  
+
 </div>
 
 > [!NOTE]
@@ -37,5 +37,14 @@
 > ## ❤️ Become a sponsor
 > [Click here to actively contribute to the project](https://github.com/sponsors/wpbones)
 
+#
 
+> [!NOTE]
+> Have a look at the new [WPBones website and documentation](https://wpbones.com)
 
+> [!TIP]
+> To participate more actively in discussions and stay updated on proposals and latest releases, I would be pleased if you joined:
+> 
+>  - [WP Bones community on Discord](https://discord.gg/5bdVyycU8F)
+>  - [WP Bones GitHub Discussion](https://github.com/wpbones/WPBones/discussions)
+>  - [WP Bones GitHub Roadmap](https://github.com/orgs/wpbones/projects/4)
