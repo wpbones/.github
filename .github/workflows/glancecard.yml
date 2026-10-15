@@ -1,0 +1,74 @@
+# Renders a card for every public repository of the organisation with
+# glancecard (https://github.com/gfazioli/glancecard) and commits them to
+# glancecard/. Each README embeds its card from this repository's main, so the
+# daily bot commit lands here and the projects' own histories stay clean.
+#
+# There is no profile card: glancecard draws one for a user, not for an
+# organisation. The organisation's profile (profile/README.md) shows the
+# framework's card instead.
+#
+# To add a repository: one line under `repos`, then the card under its
+# README's title, pointing at
+# raw.githubusercontent.com/wpbones/.github/main/glancecard/<name>.svg.
+# Archived repositories are left out (WPKirk): their README can no longer
+# change.
+
+name: glancecard
+
+on:
+  schedule:
+    - cron: "30 5 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/glancecard.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: glancecard
+  cancel-in-progress: false
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      # One file per repository, <name>.svg, in one seasonal look: Halloween is
+      # worn from 1 October to 2 November and is Midnight the rest of the year.
+      # Switching the season is this line alone; the READMEs point at the file,
+      # not at a look.
+      - uses: gfazioli/glancecard@9c25b9eed969b7c610e995bfdfb906486a86d390 # v0.3.0
+        with:
+          repos: |
+            wpbones/WPBones
+            wpbones/website-docs
+            wpbones/WPKirk-Boilerplate
+            wpbones/WPKirk-API-Boilerplate
+            wpbones/WPKirk-Blade-Boilerplate
+            wpbones/WPKirk-CPT-Boilerplate
+            wpbones/WPKirk-Cron-Boilerplate
+            wpbones/WPKirk-Database-Boilerplate
+            wpbones/WPKirk-Hooks-Boilerplate
+            wpbones/WPKirk-Internationalization-Boilerplate
+            wpbones/WPKirk-Mantine-Boilerplate
+            wpbones/WPKirk-Options-Boilerplate
+            wpbones/WPKirk-Packages-Boilerplate
+            wpbones/WPKirk-ReactJS-Boilerplate
+            wpbones/WPKirk-Routes-Boilerplate
+            wpbones/WPKirk-TypeScript-Boilerplate
+            wpbones/actions-and-filters-js
+            wpbones/flags
+            wpbones/geolocalizer
+            wpbones/morris-php
+            wpbones/pure-css-switch
+            wpbones/pure-css-tabs
+            wpbones/useragent
+            wpbones/wpkirk-helpers
+            wpbones/wptables
+          theme: halloween
+          time-zone: Europe/Rome
+          commit-message: "chore: refresh the glancecard cards"

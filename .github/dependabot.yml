@@ -1,0 +1,8 @@
+# A new glancecard (or actions/checkout) release becomes a pull request that
+# bumps the pinned SHA in .github/workflows/glancecard.yml.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
