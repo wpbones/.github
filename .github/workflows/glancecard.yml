@@ -41,7 +41,7 @@ jobs:
       # worn from 1 October to 2 November and is Midnight the rest of the year.
       # Switching the season is this line alone; the READMEs point at the file,
       # not at a look.
-      - uses: gfazioli/glancecard@9c25b9eed969b7c610e995bfdfb906486a86d390 # v0.3.0
+      - uses: gfazioli/glancecard@f70c9db437c0283e014a2cea9f8b48b546567252 # v0.6.0
         with:
           repos: |
             wpbones/WPBones
