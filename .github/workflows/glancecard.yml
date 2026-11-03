@@ -37,11 +37,11 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      # One file per repository, <name>.svg, in one seasonal look: Halloween is
-      # worn from 1 October to 2 November and is Midnight the rest of the year.
-      # Switching the season is this line alone; the READMEs point at the file,
-      # not at a look.
-      - uses: gfazioli/glancecard@9c25b9eed969b7c610e995bfdfb906486a86d390 # v0.3.0
+      # One file per repository, <name>.svg, in one look: Bridge, the starship
+      # console, all year since 2026-11-03 (Halloween before it). Switching the
+      # look is the `theme` line alone; the READMEs point at the file, not at a
+      # look.
+      - uses: gfazioli/glancecard@14788d177cabef010443a61b25c3774e7be632e5 # v0.6.1
         with:
           repos: |
             wpbones/WPBones
@@ -69,6 +69,6 @@ jobs:
             wpbones/useragent
             wpbones/wpkirk-helpers
             wpbones/wptables
-          theme: halloween
+          theme: bridge
           time-zone: Europe/Rome
           commit-message: "chore: refresh the glancecard cards"
