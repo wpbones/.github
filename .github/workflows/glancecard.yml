@@ -61,12 +61,15 @@ jobs:
             wpbones/WPKirk-Routes-Boilerplate
             wpbones/WPKirk-TypeScript-Boilerplate
             wpbones/actions-and-filters-js
+            wpbones/add-browser-search
             wpbones/flags
+            wpbones/flash-feed-scroll-reader
             wpbones/geolocalizer
             wpbones/morris-php
             wpbones/pure-css-switch
             wpbones/pure-css-tabs
             wpbones/useragent
+            wpbones/wp-chooseyourtheme
             wpbones/wpkirk-helpers
             wpbones/wptables
           theme: bridge
